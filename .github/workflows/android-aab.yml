@@ -32,6 +32,10 @@ jobs:
         working-directory: frontend
         run: pnpm build
 
+      - name: Install Capacitor CLI
+        working-directory: frontend
+        run: pnpm add -D @capacitor/cli
+
       - name: Sync Capacitor
         working-directory: frontend
         run: pnpm exec cap sync android
