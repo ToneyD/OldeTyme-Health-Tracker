@@ -1,4 +1,4 @@
-.github/workflows/android-aab.yml << 'EOF'
+cat << 'EOF' > .github/workflows/android-aab.yml
 name: Android AAB Build
 
 on:
