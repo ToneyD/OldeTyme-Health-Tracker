@@ -1,4 +1,3 @@
-'EOF' > .github/workflows/android-aab.yml
 name: Android AAB Build
 
 on:
