@@ -1,9 +1,10 @@
-cat > .github/workflows/android-aab.yml << 'EOF'
+.github/workflows/android-aab.yml << 'EOF'
 name: Android AAB Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
