@@ -51,4 +51,3 @@ jobs:
         with:
           name: app-release
           path: frontend/android/app/build/outputs/bundle/release/app-release.aab
-EOF
