@@ -1,0 +1,17 @@
+default_platform(:android)
+
+platform :android do
+  desc "Build and upload Android AAB to Google Play Internal track"
+  lane :internal do
+    sh("./gradlew clean bundleRelease")
+
+    upload_to_play_store(
+      track: "internal",
+      aab: "app/build/outputs/bundle/release/app-release.aab",
+      json_key: ENV["SUPPLY_JSON_KEY_PATH"],
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true
+    )
+  end
+end

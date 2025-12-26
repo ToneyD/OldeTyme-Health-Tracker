@@ -1,0 +1,28 @@
+# Node / web build
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+
+# Android / Gradle
+**/.gradle/
+**/build/
+*.iml
+local.properties
+
+# Secrets / signing
+*.jks
+*.keystore
+*.p12
+key.properties
+play-service-account.json
+**/google-services.json
+
+# Artifacts
+*.aab
+*.apk
+*.ipa
+
+# OS
+.DS_Store
